@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0",
+  "sport": "mlb",
+  "team": {
+    "name": "Texas Rangers",
+    "short_name": "Rangers",
+    "slug": "texas-rangers",
+    "stm_label": "Rangers Nation Member"
+  },
+  "identity": {
+    "primary_hex":      "#003087",
+    "secondary_hex":    "#C4A141",
+    "ticketing_vendor": "SeatGeek",
+    "scan_vendor":      "SeatGeek",
+    "fnb_vendor":       "Delaware North"
+  },
+  "venue": {
+    "name":     "Globe Life Field",
+    "capacity": 40518
+  },
+  "svg": {
+    "viewbox":        "0 0 900 800",
+    "sport_geometry": "baseball",
+    "anchors": {
+      "center":         [450, 490],
+      "home_plate":     [450, 574],
+      "cf_wall":        [450,  56],
+      "lf_corner":      [140, 182],
+      "rf_corner":      [746, 200],
+      "left_foul_ext":  [108, 312],
+      "right_foul_ext": [778, 325]
+    },
+    "zones": [
+      {
+        "name": "Upper Level", "data_zone": "Upper Level",
+        "layer": 1, "fill": "#b8cce4", "suite_level": false,
+        "path": ["lf_corner","cf_wall","rf_corner","right_foul_ext","left_foul_ext"]
+      },
+      {
+        "name": "Outfield", "data_zone": "Outfield",
+        "layer": 2, "fill": "#d4c8a0", "suite_level": false,
+        "path": [
+          "lf_corner","cf_wall","rf_corner",
+          {"anchor":"rf_corner","offset_pct":0.72},
+          {"anchor":"cf_wall",  "offset_pct":0.82},
+          {"anchor":"lf_corner","offset_pct":0.72}
+        ]
+      },
+      {
+        "name": "Main Level", "data_zone": "Main Level",
+        "layer": 3, "fill": "#a0b890", "suite_level": false,
+        "path": [
+          {"anchor":"lf_corner","offset_pct":0.55},
+          {"anchor":"cf_wall",  "offset_pct":0.58},
+          {"anchor":"rf_corner","offset_pct":0.55},
+          {"anchor":"right_foul_ext","offset_pct":0.55},
+          {"anchor":"left_foul_ext", "offset_pct":0.55}
+        ]
+      },
+      {
+        "name": "Balcones Speakeasy", "data_zone": "Balcones Speakeasy",
+        "layer": 4, "fill": "#8a6a9a", "suite_level": true,
+        "path": [
+          {"anchor":"lf_corner","offset_pct":0.55},
+          {"anchor":"lf_corner","offset_pct":0.62},
+          {"anchor":"cf_wall",  "offset_pct":0.50},
+          {"anchor":"lf_corner","offset_pct":0.42}
+        ]
+      },
+      {
+        "name": "Field Level", "data_zone": "Field Level",
+        "layer": 5, "fill": "#6a9ab8", "suite_level": false,
+        "path": [
+          {"anchor":"lf_corner","offset_pct":0.38},
+          {"anchor":"cf_wall",  "offset_pct":0.42},
+          {"anchor":"rf_corner","offset_pct":0.38},
+          {"anchor":"right_foul_ext","offset_pct":0.35},
+          {"anchor":"left_foul_ext", "offset_pct":0.35}
+        ]
+      },
+      {
+        "name": "Lexus Club", "data_zone": "Lexus Club",
+        "layer": 6, "fill": "#1a3f6f", "suite_level": true,
+        "path": [
+          {"anchor":"home_plate","offset_pct":0.22},
+          {"anchor":"left_foul_ext","offset_pct":0.20},
+          {"anchor":"home_plate",   "offset_pct":0.18},
+          {"anchor":"right_foul_ext","offset_pct":0.20}
+        ]
+      }
+    ],
+    "gates": [
+      {"name":"Northwest Entry",          "data_gate":"Northwest Entry",
+       "cx":140,"cy":182,"label_side":"left",   "fill":"#003087","is_premium":false},
+      {"name":"TXU Energy North Entry",   "data_gate":"TXU Energy North Entry",
+       "cx":450,"cy": 66,"label_side":"top",    "fill":"#003087","is_premium":false},
+      {"name":"Comerica Northeast Entry", "data_gate":"Comerica Northeast Entry",
+       "cx":765,"cy":325,"label_side":"right",  "fill":"#003087","is_premium":false},
+      {"name":"VIP Entry North",          "data_gate":"VIP Entry North",
+       "cx":108,"cy":360,"label_side":"left",   "fill":"#c41e3a","is_premium":true},
+      {"name":"VIP Entry South",          "data_gate":"VIP Entry South",
+       "cx":108,"cy":480,"label_side":"left",   "fill":"#c41e3a","is_premium":true},
+      {"name":"SeatGeek Southeast Entry", "data_gate":"SeatGeek Southeast Entry",
+       "cx":760,"cy":528,"label_side":"right",  "fill":"#003087","is_premium":false},
+      {"name":"Toyota Southwest Entry",   "data_gate":"Toyota Southwest Entry",
+       "cx":420,"cy":726,"label_side":"bottom", "fill":"#003087","is_premium":false}
+    ],
+    "gate_by_zone_weights": {
+      "Upper Level":        [20, 15, 15, 10, 10, 15, 15],
+      "Outfield":           [30, 15, 10,  5,  5, 10, 25],
+      "Main Level":         [15, 15, 20, 10, 10, 20, 10],
+      "Balcones Speakeasy": [30,  5,  5, 30, 10,  5, 15],
+      "Field Level":        [10, 15, 20, 15, 15, 15, 10],
+      "Lexus Club":         [ 5,  5, 10, 30, 30, 10, 10]
+    }
+  }
+}
