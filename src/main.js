@@ -207,9 +207,9 @@ function renderTab(tabId) {
   if (GAME_TICKETS.length !== 81)                             errors.push(`GAME_TICKETS: expected 81`);
   if (GAME_SCANS.length !== 81)                               errors.push(`GAME_SCANS: expected 81`);
   if (GAME_FNB.length !== 81)                                 errors.push(`GAME_FNB: expected 81`);
-  if (FANS.length !== 500)                                    errors.push(`FANS: expected 500, got ${FANS.length}`);
-  if (FANS.filter(f => f.global_fan_id).length !== 362)      errors.push(`Linked fans: expected 362`);
-  if (FANS.filter(f => f.linked_sources === 'SCAN|FNB').length !== 42) errors.push(`Dark fans: expected 42`);
+  if (FANS.length !== 3000)                                    errors.push(`FANS: expected 3000, got ${FANS.length}`);
+  if (FANS.filter(f => f.global_fan_id).length !== 2172)      errors.push(`Linked fans: expected 2172`);
+  if (FANS.filter(f => f.linked_sources === 'SCAN|FNB').length !== 252) errors.push(`Dark fans: expected 252`);
   if (filterGames(STATE.tab1).focused.length === 0)           errors.push('filterGames returns empty on default state');
   if (filterFans(STATE.tab4, 'tab4').length === 0)            errors.push('filterFans tab4 returns empty');
   if (errors.length) {

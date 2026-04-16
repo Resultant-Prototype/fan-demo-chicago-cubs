@@ -427,7 +427,7 @@ function renderTab1() {
 
   // ── Chart 7: Gate Entry Heatmap (SVG) ──
   const fanScans   = FANS.filter(x => x.gate_entry != null);
-  const gateCounts = Object.fromEntries(GATES.map(g => [g, 0]));
+  const gateCounts = Object.fromEntries(VENUE.gates.map(g => [g, 0]));
   fanScans.forEach(x => { gateCounts[x.gate_entry] = (gateCounts[x.gate_entry] || 0) + 1; });
 
   const totalScans = Object.values(gateCounts).reduce((a, b) => a + b, 0);
@@ -448,7 +448,7 @@ function renderTab1() {
   const ARR_BUCKETS = ['90plus','60to90','30to60','0to30','post_pitch'];
   const ARR_LABELS  = ['90+ min','60–90','30–60','0–30 min','Post-pitch'];
   const gateArrival = {};
-  GATES.forEach(g => {
+  VENUE.gates.forEach(g => {
     const gFans = fanScans.filter(x => x.gate_entry === g);
     const n = gFans.length || 1;
     gateArrival[g] = ARR_BUCKETS.map((b, i) => ({
