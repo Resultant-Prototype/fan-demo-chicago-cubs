@@ -1,3 +1,6 @@
 index.html
 node_modules/
 .DS_Store
+__pycache__/
+*.py[cod]
+*.pyo
