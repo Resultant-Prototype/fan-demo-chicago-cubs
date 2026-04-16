@@ -118,7 +118,7 @@ function renderTab1() {
     { label: 'No-Show Rate',               value: fmt.pct(noShowRate) },
     { label: 'Early Arrival Rate',         value: fmt.pct(earlyArrRate) },
     { label: 'Avg Tickets Per Scan',       value: avgTixPerScan.toFixed(1) },
-    { label: 'Lone Star Member Scan Rate', value: fmt.pct(stmScanRate), lead: true },
+    { label: `${TEAM.stmLabel} Scan Rate`, value: fmt.pct(stmScanRate), lead: true },
   ]);
 
   // Full-season timeline for per-game time-series charts
@@ -319,7 +319,7 @@ function renderTab1() {
   CHARTS['t1-noshowByType'] = new Chart(document.getElementById('t1-noshowByType'), {
     type: 'bar',
     data: {
-      labels: ['Lone Star Member', 'Single Game', 'Secondary Market'],
+      labels: [TEAM.stmLabel, 'Single Game', 'Secondary Market'],
       datasets: [{
         label: 'No-Show Rate',
         data: [stmNS, singleNS, secNS],
@@ -336,7 +336,7 @@ function renderTab1() {
             label: ctx => {
               const ratio = ctx.dataIndex === 2 ? (secNS / stmNS).toFixed(1) : null;
               return ratio
-                ? `${fmt.pct(ctx.raw)} — ${ratio}× the Lone Star Member rate`
+                ? `${fmt.pct(ctx.raw)} — ${ratio}× the ${TEAM.stmLabel} rate`
                 : fmt.pct(ctx.raw);
             },
           },
@@ -349,7 +349,7 @@ function renderTab1() {
     },
   });
 
-  // ── Chart 5: Lone Star Member Scan Rate by Month ──
+  // ── Chart 5: STM Scan Rate by Month ──
   destroyChart('t1-stmScanRate');
   const months5 = [...new Set(focused.map(g => g.month))].sort((a, b) => a - b);
   const monthNames5 = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
@@ -363,7 +363,7 @@ function renderTab1() {
     data: {
       labels: months5.map(m => monthNames5[m]),
       datasets: [{
-        label: 'Lone Star Member Scan Rate',
+        label: `${TEAM.stmLabel} Scan Rate`,
         data: stmByMonth,
         borderColor: PALETTE.navy,
         backgroundColor: `rgba(0,50,120,0.07)`,
@@ -378,7 +378,7 @@ function renderTab1() {
           callbacks: {
             title: items => {
               const m = months5[items[0]?.dataIndex];
-              return monthNames5[m] + ' — Lone Star Member Scan Rate';
+              return monthNames5[m] + ` — ${TEAM.stmLabel} Scan Rate`;
             },
             label: ctx => {
               const avg = stmByMonth.reduce((a, b) => a + b, 0) / (stmByMonth.length || 1);
@@ -433,7 +433,7 @@ function renderTab1() {
   const totalScans = Object.values(gateCounts).reduce((a, b) => a + b, 0);
   const maxCount   = Math.max(...Object.values(gateCounts));
 
-  // Color scale: white → Rangers navy (sqrt for spread across low-volume gates)
+  // Color scale: white → navy (sqrt for spread across low-volume gates)
   const gateColorScale = v => {
     const t = maxCount > 0 ? Math.sqrt(v / maxCount) : 0;
     const r = Math.round(255 - t * 255);
@@ -628,7 +628,7 @@ function renderTab2() {
     { label: 'Gross Revenue',              value: fmt.currency(totalRev) },
     { label: 'Avg Ticket Value',           value: '$' + Math.round(avgTktVal) },
     { label: 'Secondary Market Share',     value: fmt.pct(secShare) },
-    { label: 'Lone Star Member Scan Rate', value: fmt.pct(stmScanRate) },
+    { label: `${TEAM.stmLabel} Scan Rate`, value: fmt.pct(stmScanRate) },
     { label: 'Top State',                  value: topState, lead: true },
   ]);
 
@@ -687,7 +687,7 @@ function renderTab2() {
     data: {
       labels: sortedGames2.map(g => g.date.slice(5)),
       datasets: [
-        { label: 'Lone Star Member', data: sortedGames2.map(g => { const t = tlTickets2.find(r => r.game_id === g.id); return t ? t.stm_revenue : 0; }), backgroundColor: PALETTE.navy, borderRadius: 2 },
+        { label: TEAM.stmLabel, data: sortedGames2.map(g => { const t = tlTickets2.find(r => r.game_id === g.id); return t ? t.stm_revenue : 0; }), backgroundColor: PALETTE.navy, borderRadius: 2 },
         { label: 'Single Game',      data: sortedGames2.map(g => { const t = tlTickets2.find(r => r.game_id === g.id); return t ? t.single_revenue : 0; }), backgroundColor: PALETTE.navySoft },
         { label: 'Secondary Market', data: sortedGames2.map(g => { const t = tlTickets2.find(r => r.game_id === g.id); return t ? t.secondary_revenue : 0; }), backgroundColor: PALETTE.gray },
       ],
@@ -1431,7 +1431,7 @@ function renderTab3() {
     });
   }
 
-  // ── Chart 5: Per-Cap Spend by Seating Area (bar, Globe Life Field sections) ──
+  // ── Chart 5: Per-Cap Spend by Seating Area (bar, venue sections) ──
   destroyChart('t3-perCapBySection');
   const drillRevField5 = f.fnbDrilldown ? `${f.fnbDrilldown}_revenue` : null;
   const categoryShare5 = drillRevField5
@@ -1599,7 +1599,7 @@ function renderTab4() {
   destroyChart('t4-spendByTier');
   const tierMap  = { stm: 0, single_game: 1, secondary: 2 };
   const tierCols = [PALETTE.navy, PALETTE.navySoft, PALETTE.gray];
-  const tierDisplayLabels = ['Lone Star Member', 'Single Game', 'Secondary Market'];
+  const tierDisplayLabels = [TEAM.stmLabel, 'Single Game', 'Secondary Market'];
 
   const scatterDatasets = ['stm', 'single_game', 'secondary'].map((tier, ti) => {
     const fans4tier = fans4.filter(x => x.ticket_type === tier && x.total_cross_channel_spend != null);

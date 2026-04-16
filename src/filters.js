@@ -12,7 +12,7 @@ const STATE = {
   tab4: { dateRange: 'full_season', segment: 'all_linked', linkedStatus: 'linked_only' },
 };
 
-// Date range buckets — keyed to 2025 Rangers season
+// Date range buckets — keyed to 2025 MLB season
 const DATE_PRESETS = {
   full_season:  () => [new Date('2025-03-31'), new Date('2025-09-28')],
   first_half:   () => [new Date('2025-03-31'), new Date('2025-06-30')],
