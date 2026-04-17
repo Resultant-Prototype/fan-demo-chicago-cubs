@@ -24,6 +24,10 @@
 - **NFL preset** (`presets/nfl.js`) — stubbed. Fully populate during Kansas City Chiefs build.
 - **NBA/NHL preset** (`presets/nba-nhl.js`) — stubbed. Populate at first NBA or NHL client.
 
+## Known Gaps (new-demo.js pipeline)
+
+- **`from_seating_chart.py` does not support `--config` flag** — `new-demo.js` Step 6 calls `from_seating_chart.py "${scrapedCopy}" "${shortSlug}" --config "${venueJsonPath}"` to pass the venue JSON for zone mapping, but the script silently ignores `--config` and falls back to its hardcoded `classify_section()` logic. Fix: parse `--config <json>` in `from_seating_chart.py`, load the venue JSON, and use its `svg.zones[].section_ids` patterns to map scraped section IDs to zone colors/names instead of the hardcoded numeric-range classifier.
+
 ## Future Enhancements
 
 - Post-season toggle for NFL/NBA/NHL (playoff home games extend season)
