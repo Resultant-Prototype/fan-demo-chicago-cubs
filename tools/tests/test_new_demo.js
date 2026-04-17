@@ -22,3 +22,44 @@ test('slugify: special characters stripped', () => {
 test('slugify: leading/trailing hyphens removed', () => {
   assert.equal(slugify('  Team Name  '), 'team-name');
 });
+
+// ── preflight ────────────────────────────────────────────────
+const { checkEnv, checkBinary, checkDirAbsent } = require('../lib/preflight');
+const os   = require('os');
+const path = require('path');
+
+test('checkEnv: returns null when key is set', () => {
+  const orig = process.env.ANTHROPIC_API_KEY;
+  process.env.ANTHROPIC_API_KEY = 'sk-ant-test';
+  assert.equal(checkEnv(), null);
+  if (orig === undefined) delete process.env.ANTHROPIC_API_KEY;
+  else process.env.ANTHROPIC_API_KEY = orig;
+});
+
+test('checkEnv: returns error message when key is missing', () => {
+  const orig = process.env.ANTHROPIC_API_KEY;
+  delete process.env.ANTHROPIC_API_KEY;
+  const result = checkEnv();
+  assert.ok(result.includes('ANTHROPIC_API_KEY'));
+  if (orig !== undefined) process.env.ANTHROPIC_API_KEY = orig;
+});
+
+test('checkBinary: returns null for git (must be installed)', () => {
+  assert.equal(checkBinary('git'), null);
+});
+
+test('checkBinary: returns error for nonexistent binary', () => {
+  const result = checkBinary('__nonexistent_binary_xyz__');
+  assert.ok(result !== null);
+  assert.ok(result.includes('not found'));
+});
+
+test('checkDirAbsent: returns null when dir does not exist', () => {
+  assert.equal(checkDirAbsent('/tmp/__no_such_dir_xyz_12345__'), null);
+});
+
+test('checkDirAbsent: returns error when dir exists', () => {
+  const result = checkDirAbsent(os.tmpdir());
+  assert.ok(result !== null);
+  assert.ok(result.includes('already exists'));
+});
