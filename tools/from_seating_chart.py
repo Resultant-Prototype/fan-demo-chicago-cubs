@@ -81,16 +81,19 @@ def classify_section(sid: str) -> str:
 # ── Main ───────────────────────────────────────────────────────
 
 def main():
-    if len(sys.argv) < 2:
-        print("Usage: python3 tools/from_seating_chart.py <source.svg> [slug]")
+    list_sections = '--list-sections' in sys.argv
+    remaining = [a for a in sys.argv[1:] if a != '--list-sections']
+
+    if len(remaining) < 1:
+        print("Usage: python3 tools/from_seating_chart.py <source.svg> [slug] [--list-sections]")
         sys.exit(1)
 
-    src_path = Path(sys.argv[1])
+    src_path = Path(remaining[0])
     if not src_path.exists():
         print(f"ERROR: {src_path} not found", file=sys.stderr)
         sys.exit(1)
 
-    slug = sys.argv[2] if len(sys.argv) > 2 else src_path.stem
+    slug = remaining[1] if len(remaining) > 1 else src_path.stem
 
     # ── Parse source SVG ──────────────────────────────────────
     src = src_path.read_text()
@@ -122,6 +125,20 @@ def main():
     if not sections:
         print("ERROR: no spoly_* polygons found. Check that the source SVG uses id='spoly_NNN' on section polygons.", file=sys.stderr)
         sys.exit(1)
+
+    if list_sections:
+        numeric_ids = []
+        named_ids   = []
+        for _, sid, _ in sections:
+            try:
+                numeric_ids.append(int(sid))
+            except ValueError:
+                named_ids.append(sid)
+        numeric_ids.sort()
+        import json
+        print(f"Numeric ({len(numeric_ids)}): {json.dumps(numeric_ids)}")
+        print(f"Named   ({len(named_ids)}): {json.dumps(named_ids)}")
+        sys.exit(0)
 
     print(f"Found {len(sections)} section polygons", file=sys.stderr)
 
