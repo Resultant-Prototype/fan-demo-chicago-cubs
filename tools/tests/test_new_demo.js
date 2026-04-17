@@ -231,3 +231,30 @@ test('patchClientConfig: does not modify other config fields', () => {
 
   tmpFs.rmSync(dir, { recursive: true });
 });
+
+// ── dry-run integration ──────────────────────────────────────
+const { spawnSync: spawnTest } = require('child_process');
+
+test('--dry-run prints summary and exits 0', () => {
+  // Requires ANTHROPIC_API_KEY and gh auth; skips if not set
+  if (!process.env.ANTHROPIC_API_KEY) {
+    console.log('  (skipped — ANTHROPIC_API_KEY not set)');
+    return;
+  }
+
+  const repoRoot = path.resolve(__dirname, '..', '..');
+  const entryPoint = path.join(repoRoot, 'tools', 'new-demo.js');
+  if (!require('fs').existsSync(entryPoint)) {
+    throw new Error(`Safety check: tools/new-demo.js not found at ${entryPoint} — test not run from template repo root`);
+  }
+
+  const result = spawnTest(
+    'node',
+    ['tools/new-demo.js', '--dry-run', 'Test Dry Run Team', 'Test Venue'],
+    { encoding: 'utf8', cwd: repoRoot }
+  );
+
+  assert.equal(result.status, 0, `dry-run exited ${result.status}: ${result.stderr}`);
+  assert.ok(result.stdout.includes('DRY RUN'), 'DRY RUN not in output');
+  assert.ok(result.stdout.includes('test-dry-run-team'), 'slug not in output');
+});
