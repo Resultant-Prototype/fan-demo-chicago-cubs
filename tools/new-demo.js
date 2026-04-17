@@ -36,6 +36,8 @@ async function main() {
     else positional.push(args[i]);
   }
 
+  const { buildSynthPrompt, generateSynthData, SPORT_HOME_GAMES } = require('./lib/synth');
+
   const isResume = flags.resume !== null;
   const slug     = isResume ? flags.resume : (positional[0] ? slugify(positional[0]) : null);
   const teamName  = isResume ? null : positional[0];
@@ -75,7 +77,6 @@ async function main() {
   if (!flags.quiet) console.log('✓ Preflight passed\n');
 
   if (flags.dryRun) {
-    const { buildSynthPrompt, SPORT_HOME_GAMES } = require('./lib/synth');
     console.log('DRY RUN — would create:');
     console.log(`  Local:  ${localDir}`);
     console.log(`  GitHub: github.com/brianvinson-serve/${repoName} (private)`);
@@ -172,14 +173,12 @@ async function main() {
 
   // Step 8: Synthetic data
   if (!flags.quiet) console.log('Generating synthetic season data...');
-  const { generateSynthData } = require('./lib/synth');
-  const venueJsonPathForSynth = path.join(localDir, `${slug}-venue.json`);
-  if (!fs.existsSync(venueJsonPathForSynth)) {
-    console.error(`✗ Missing venue JSON: ${venueJsonPathForSynth}`);
+  if (!fs.existsSync(venueJsonPath)) {
+    console.error(`✗ Missing venue JSON: ${venueJsonPath}`);
     console.error(`  Run without --resume to generate it first.`);
     process.exit(2);
   }
-  const venueDataForSynth = JSON.parse(fs.readFileSync(venueJsonPathForSynth, 'utf8'));
+  const venueDataForSynth = JSON.parse(fs.readFileSync(venueJsonPath, 'utf8'));
   await generateSynthData(
     venueDataForSynth,
     path.join(localDir, 'src', 'client-config.js'),
