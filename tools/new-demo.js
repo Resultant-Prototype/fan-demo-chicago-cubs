@@ -191,6 +191,10 @@ async function main() {
   if (!flags.quiet) console.log('Building index.html...');
   run('node build.js', { cwd: localDir });
 
+  // Step 9b: Smoke test — verifies data layer generates non-zero values before committing
+  if (!flags.quiet) console.log('Running smoke test...');
+  run('node tools/smoke-test.js', { cwd: localDir });
+
   // Step 10: Commit all generated artifacts + push
   if (!flags.quiet) console.log('Committing and pushing...');
   run(`git add -A && git commit -m "init: ${slug} demo"`, { cwd: localDir });
