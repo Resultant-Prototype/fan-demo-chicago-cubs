@@ -477,6 +477,7 @@ function renderTab1() {
 
   const host = document.getElementById('t1-gateHeatmap');
   if (host) {
+    host.querySelectorAll('.section-zone').forEach(el => el.setAttribute('fill', '#d8d8d8'));
     host.querySelectorAll('.gate-marker').forEach(el => {
       const gate   = el.dataset.gate;
       const count  = gateCounts[gate] || 0;
@@ -527,7 +528,7 @@ function renderTab1() {
 
       const texts = [];
       let sib = circ.nextElementSibling;
-      while (sib && sib.tagName.toLowerCase() === 'text' && texts.length < 2) {
+      while (sib && sib.tagName.toLowerCase() === 'text' && !sib.id && texts.length < 2) {
         texts.push(sib); sib = sib.nextElementSibling;
       }
 
@@ -979,6 +980,7 @@ function renderTab2() {
 
   const sectionHost = document.getElementById('t2-sectionHeatmap');
   if (sectionHost) {
+    sectionHost.querySelectorAll('.gate-marker').forEach(el => el.setAttribute('fill', '#d8d8d8'));
     sectionHost.querySelectorAll('.section-zone').forEach(el => {
       const zone   = el.dataset.zone;
       const rev    = zoneRev[zone] || 0;
@@ -986,7 +988,7 @@ function renderTab2() {
       const perFan = zoneAvg[zone] || 0;
       const isDark = cnt > 0 && perFan > maxAvg * 0.4;
 
-      el.setAttribute('fill', cnt > 0 ? sectionColorScale(perFan) : '#e8e4dc');
+      el.setAttribute('fill', cnt > 0 ? sectionColorScale(perFan) : '#d8d8d8');
 
       // Zone two-line label: zone name + avg value
       // Always remove old label first — tspan structure requires full rebuild each render
@@ -1007,10 +1009,14 @@ function renderTab2() {
           const lbl = document.createElementNS('http://www.w3.org/2000/svg', 'text');
           lbl.id = lid;
           lbl.setAttribute('text-anchor',   'middle');
-          lbl.setAttribute('font-weight',   '700');
+          lbl.setAttribute('font-weight',   '800');
           lbl.setAttribute('font-family',   "'Lexend Deca',system-ui,sans-serif");
-          lbl.setAttribute('font-size',     '10');
+          lbl.setAttribute('font-size',     '11');
           lbl.setAttribute('fill',          color);
+          lbl.setAttribute('stroke',        isDark ? 'rgba(0,0,30,0.55)' : 'rgba(255,255,255,0.6)');
+          lbl.setAttribute('stroke-width',  '3');
+          lbl.setAttribute('stroke-linejoin','round');
+          lbl.setAttribute('paint-order',   'stroke');
           lbl.setAttribute('pointer-events','none');
           lbl.setAttribute('x', cx);
           lbl.setAttribute('y', cy - 7);  // shift up so two lines center on cy

@@ -65,3 +65,4 @@
 | `from_seating_chart.py` duplicate-href parse error | Chiefs build | Strips SVG default namespace + removes `xlink:href` instead of renaming |
 | `new-demo.js` fan-demos dir at `$HOME/fan-demos` | Chiefs build | Defaults to `07_Experiments/fan-demos`; override via `FAN_DEMOS_DIR` |
 | No smoke test before commit | Chiefs build | `tools/smoke-test.js` wired into step 9b of `new-demo.js` |
+| `SEAT_SECTIONS` undefined — ticket heatmap blank | Chiefs build | Added `const SEAT_SECTIONS = VENUE.sections;` to `data.js` |
