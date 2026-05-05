@@ -7,7 +7,7 @@ const TEAM = {
   sport:           'mlb',
   orgName:         'Chicago Cubs',
   shortName:       'Cubs',
-  logoFile:        'STUB_LOGO_FILE.png',
+  logoFile:        'cubs-logo.svg',
   stmLabel:        'Cubs Season Ticket Holder',
   ticketingVendor: 'SeatGeek',
   scanVendor:      'MLB Ballpark App',
