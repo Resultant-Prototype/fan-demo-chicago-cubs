@@ -1,0 +1,476 @@
+{
+  "schema_version": "1.0",
+  "sport": "mlb",
+  "team": {
+    "name": "Chicago Cubs",
+    "short_name": "Cubs",
+    "slug": "chicago-cubs",
+    "stm_label": "Cubs Season Ticket Holder"
+  },
+  "identity": {
+    "primary_hex": "#0E3386",
+    "secondary_hex": "#CC3433",
+    "ticketing_vendor": "SeatGeek",
+    "scan_vendor": "MLB Ballpark App",
+    "fnb_vendor": "Levy Restaurants"
+  },
+  "venue": {
+    "name": "Wrigley Field",
+    "capacity": 41649
+  },
+  "svg": {
+    "viewbox": "0 0 900 800",
+    "sport_geometry": "baseball",
+    "anchors": {
+      "center": [
+        450,
+        370
+      ],
+      "home_plate": [
+        450,
+        575
+      ],
+      "cf_wall": [
+        450,
+        95
+      ],
+      "lf_corner": [
+        230,
+        160
+      ],
+      "rf_corner": [
+        670,
+        160
+      ],
+      "left_foul_ext": [
+        175,
+        575
+      ],
+      "right_foul_ext": [
+        725,
+        575
+      ]
+    },
+    "zones": [
+      {
+        "name": "Club Box",
+        "data_zone": "Club Box",
+        "layer": 4,
+        "fill": "#0E3386",
+        "suite_level": false,
+        "section_ids": [
+          "3-32"
+        ],
+        "path": [
+          {
+            "anchor": "home_plate",
+            "dx": 0,
+            "dy": -30
+          },
+          {
+            "anchor": "left_foul_ext",
+            "dx": 30,
+            "dy": -20
+          },
+          {
+            "anchor": "lf_corner",
+            "dx": 40,
+            "dy": 30
+          },
+          {
+            "anchor": "rf_corner",
+            "dx": -40,
+            "dy": 30
+          },
+          {
+            "anchor": "right_foul_ext",
+            "dx": -30,
+            "dy": -20
+          }
+        ]
+      },
+      {
+        "name": "Field Box",
+        "data_zone": "Field Box",
+        "layer": 3,
+        "fill": "#1B5FBF",
+        "suite_level": false,
+        "section_ids": [
+          "101-134"
+        ],
+        "path": [
+          {
+            "anchor": "home_plate",
+            "dx": 0,
+            "dy": 10
+          },
+          {
+            "anchor": "left_foul_ext",
+            "dx": 0,
+            "dy": 10
+          },
+          {
+            "anchor": "lf_corner",
+            "dx": 10,
+            "dy": 60
+          },
+          {
+            "anchor": "rf_corner",
+            "dx": -10,
+            "dy": 60
+          },
+          {
+            "anchor": "right_foul_ext",
+            "dx": 0,
+            "dy": 10
+          }
+        ]
+      },
+      {
+        "name": "Terrace Box",
+        "data_zone": "Terrace Box",
+        "layer": 2,
+        "fill": "#4A7FC1",
+        "suite_level": false,
+        "section_ids": [
+          "202-233"
+        ],
+        "path": [
+          {
+            "anchor": "home_plate",
+            "dx": 0,
+            "dy": 40
+          },
+          {
+            "anchor": "left_foul_ext",
+            "dx": -35,
+            "dy": 30
+          },
+          {
+            "anchor": "lf_corner",
+            "dx": -20,
+            "dy": 90
+          },
+          {
+            "anchor": "cf_wall",
+            "dx": 0,
+            "dy": 80
+          },
+          {
+            "anchor": "rf_corner",
+            "dx": 20,
+            "dy": 90
+          },
+          {
+            "anchor": "right_foul_ext",
+            "dx": 35,
+            "dy": 30
+          }
+        ]
+      },
+      {
+        "name": "Upper Box",
+        "data_zone": "Upper Box",
+        "layer": 1,
+        "fill": "#7BA7D4",
+        "suite_level": false,
+        "section_ids": [
+          "303-331"
+        ],
+        "path": [
+          {
+            "anchor": "home_plate",
+            "dx": 0,
+            "dy": 65
+          },
+          {
+            "anchor": "left_foul_ext",
+            "dx": -65,
+            "dy": 50
+          },
+          {
+            "anchor": "lf_corner",
+            "dx": -55,
+            "dy": 120
+          },
+          {
+            "anchor": "cf_wall",
+            "dx": 0,
+            "dy": 100
+          },
+          {
+            "anchor": "rf_corner",
+            "dx": 55,
+            "dy": 120
+          },
+          {
+            "anchor": "right_foul_ext",
+            "dx": 65,
+            "dy": 50
+          }
+        ]
+      },
+      {
+        "name": "Upper Reserved",
+        "data_zone": "Upper Reserved",
+        "layer": 1,
+        "fill": "#A8C6E8",
+        "suite_level": false,
+        "section_ids": [
+          "403-431"
+        ],
+        "path": [
+          {
+            "anchor": "home_plate",
+            "dx": 0,
+            "dy": 85
+          },
+          {
+            "anchor": "left_foul_ext",
+            "dx": -90,
+            "dy": 70
+          },
+          {
+            "anchor": "lf_corner",
+            "dx": -80,
+            "dy": 145
+          },
+          {
+            "anchor": "cf_wall",
+            "dx": 0,
+            "dy": 125
+          },
+          {
+            "anchor": "rf_corner",
+            "dx": 80,
+            "dy": 145
+          },
+          {
+            "anchor": "right_foul_ext",
+            "dx": 90,
+            "dy": 70
+          }
+        ]
+      },
+      {
+        "name": "Budweiser Bleachers",
+        "data_zone": "Budweiser Bleachers",
+        "layer": 2,
+        "fill": "#CC3433",
+        "suite_level": false,
+        "section_ids": [
+          "516-518",
+          "Bleahers"
+        ],
+        "path": [
+          {
+            "anchor": "cf_wall",
+            "dx": -80,
+            "dy": 20
+          },
+          {
+            "anchor": "cf_wall",
+            "dx": 80,
+            "dy": 20
+          },
+          {
+            "anchor": "rf_corner",
+            "dx": -30,
+            "dy": 10
+          },
+          {
+            "anchor": "lf_corner",
+            "dx": 30,
+            "dy": 10
+          }
+        ]
+      },
+      {
+        "name": "Premium Club / 1914 Club",
+        "data_zone": "Premium Club / 1914 Club",
+        "layer": 5,
+        "fill": "#B8860B",
+        "suite_level": false,
+        "section_ids": [
+          "exec_club"
+        ],
+        "path": [
+          {
+            "anchor": "home_plate",
+            "dx": -40,
+            "dy": -45
+          },
+          {
+            "anchor": "home_plate",
+            "dx": 40,
+            "dy": -45
+          },
+          {
+            "anchor": "home_plate",
+            "dx": 40,
+            "dy": -10
+          },
+          {
+            "anchor": "home_plate",
+            "dx": -40,
+            "dy": -10
+          }
+        ]
+      },
+      {
+        "name": "Standing Room Only",
+        "data_zone": "Standing Room Only",
+        "layer": 2,
+        "fill": "#6B6B6B",
+        "suite_level": false,
+        "section_ids": [
+          "SRO"
+        ],
+        "path": [
+          {
+            "anchor": "home_plate",
+            "dx": -120,
+            "dy": 10
+          },
+          {
+            "anchor": "home_plate",
+            "dx": -80,
+            "dy": 10
+          },
+          {
+            "anchor": "home_plate",
+            "dx": -80,
+            "dy": 40
+          },
+          {
+            "anchor": "home_plate",
+            "dx": -120,
+            "dy": 40
+          }
+        ]
+      }
+    ],
+    "gates": [
+      {
+        "name": "Marquee Gate",
+        "data_gate": "Marquee Gate",
+        "cx": 560,
+        "cy": 630,
+        "label_side": "bottom",
+        "fill": "#0E3386",
+        "is_premium": false
+      },
+      {
+        "name": "Gallagher Way Gate",
+        "data_gate": "Gallagher Way Gate",
+        "cx": 280,
+        "cy": 530,
+        "label_side": "left",
+        "fill": "#0E3386",
+        "is_premium": false
+      },
+      {
+        "name": "CD Peacock Premier Entrance",
+        "data_gate": "CD Peacock Premier Entrance",
+        "cx": 245,
+        "cy": 430,
+        "label_side": "left",
+        "fill": "#B8860B",
+        "is_premium": true
+      },
+      {
+        "name": "Left Field Gate",
+        "data_gate": "Left Field Gate",
+        "cx": 270,
+        "cy": 145,
+        "label_side": "left",
+        "fill": "#0E3386",
+        "is_premium": false
+      },
+      {
+        "name": "Budweiser Bleacher Gate",
+        "data_gate": "Budweiser Bleacher Gate",
+        "cx": 620,
+        "cy": 95,
+        "label_side": "top",
+        "fill": "#CC3433",
+        "is_premium": false
+      },
+      {
+        "name": "Wintrust Right Field Gate",
+        "data_gate": "Wintrust Right Field Gate",
+        "cx": 700,
+        "cy": 620,
+        "label_side": "right",
+        "fill": "#0E3386",
+        "is_premium": false
+      }
+    ],
+    "gate_by_zone_weights": {
+      "Club Box": [
+        5,
+        3,
+        4,
+        1,
+        1,
+        2
+      ],
+      "Field Box": [
+        4,
+        3,
+        2,
+        1,
+        1,
+        4
+      ],
+      "Terrace Box": [
+        4,
+        4,
+        3,
+        2,
+        2,
+        3
+      ],
+      "Upper Box": [
+        3,
+        4,
+        2,
+        3,
+        2,
+        3
+      ],
+      "Upper Reserved": [
+        3,
+        3,
+        2,
+        3,
+        2,
+        3
+      ],
+      "Budweiser Bleachers": [
+        1,
+        1,
+        1,
+        5,
+        8,
+        2
+      ],
+      "Premium Club / 1914 Club": [
+        2,
+        1,
+        8,
+        1,
+        1,
+        1
+      ],
+      "Standing Room Only": [
+        3,
+        3,
+        2,
+        2,
+        2,
+        3
+      ]
+    }
+  }
+}

@@ -195,7 +195,19 @@ async function main() {
     if (!textBlock) throw new Error('No text block in response');
 
     // Strip any accidental markdown fences
-    const raw = textBlock.text.replace(/^```[a-z]*\n?/m, '').replace(/```$/m, '').trim();
+    let raw = textBlock.text.replace(/^```[a-z]*\n?/m, '').replace(/```$/m, '').trim();
+
+    // If Claude prepended prose before the JSON, find the outermost { } block
+    const jsonStart = raw.indexOf('{');
+    if (jsonStart > 0) raw = raw.slice(jsonStart);
+    // Find the matching closing brace
+    let depth = 0, jsonEnd = -1;
+    for (let i = 0; i < raw.length; i++) {
+      if (raw[i] === '{') depth++;
+      else if (raw[i] === '}') { depth--; if (depth === 0) { jsonEnd = i; break; } }
+    }
+    if (jsonEnd !== -1 && jsonEnd < raw.length - 1) raw = raw.slice(0, jsonEnd + 1);
+
     venueObj = JSON.parse(raw);
   } catch (err) {
     console.error(`ERROR calling Claude API: ${err.message}`);

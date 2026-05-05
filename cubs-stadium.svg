@@ -1,0 +1,531 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 900 800"
+     style="display:block;width:100%;height:auto">
+
+  <defs>
+    <marker id="svg-arrow" viewBox="0 0 10 10" refX="5" refY="0"
+            markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+      <path d="M 0 10 L 5 0 L 10 10 Z" fill="#999"/>
+    </marker>
+    <clipPath id="field-clip">
+      <rect x="142.3" y="180.5" width="16.3" height="55.8"
+            rx="2.0" ry="2.0"/>
+    </clipPath>
+  </defs>
+
+  <!-- SECTION ZONES -->
+  <polygon class="section-zone" data-zone="Upper Box" data-sid="303"
+           fill="#7BA7D4" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="153.9,56.1 118.2,56.1 116.2,80.3 152.2,80.3 153.9,56.1"/>
+  <polygon class="section-zone" data-zone="Upper Box" data-sid="304"
+           fill="#7BA7D4" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="119.2,126.7 148.8,127.9 152.0,82.6 122.4,82.6 119.2,126.7"/>
+  <polygon class="section-zone" data-zone="Upper Box" data-sid="305"
+           fill="#7BA7D4" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="115.8,176.0 145.2,177.3 148.8,130.2 119.2,129.0 115.8,176.0"/>
+  <polygon class="section-zone" data-zone="Upper Box" data-sid="306"
+           fill="#7BA7D4" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="112.5,219.0 142.1,220.3 145.1,179.6 115.5,178.3 112.5,219.0"/>
+  <polygon class="section-zone" data-zone="Upper Box" data-sid="307"
+           fill="#7BA7D4" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="109.3,263.9 138.9,263.9 141.8,222.3 112.2,221.1 109.3,263.9"/>
+  <polygon class="section-zone" data-zone="Upper Box" data-sid="308"
+           fill="#7BA7D4" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="105.6,312.3 135.4,312.3 138.9,266.1 109.0,266.1 105.6,312.3"/>
+  <polygon class="section-zone" data-zone="Upper Box" data-sid="309"
+           fill="#7BA7D4" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="105.9,356.4 133.5,356.4 133.2,340.9 133.5,340.9 135.2,314.5 105.6,314.5 105.3,316.0 105.9,356.4"/>
+  <polygon class="section-zone" data-zone="Upper Box" data-sid="310"
+           fill="#7BA7D4" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="106.4,392.7 134.0,392.7 133.5,358.4 105.9,358.4 106.4,392.7"/>
+  <polygon class="section-zone" data-zone="Upper Box" data-sid="311"
+           fill="#7BA7D4" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="106.5,432.5 134.4,432.5 134.0,395.0 106.4,395.0 106.5,432.5"/>
+  <polygon class="section-zone" data-zone="Upper Box" data-sid="312"
+           fill="#7BA7D4" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="107.1,478.7 134.9,478.7 134.4,434.6 106.5,434.6 107.1,478.7"/>
+  <polygon class="section-zone" data-zone="Upper Box" data-sid="313"
+           fill="#7BA7D4" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="107.6,515.1 135.4,513.3 134.9,480.7 107.1,480.7 107.6,514.3 107.6,515.1"/>
+  <polygon class="section-zone" data-zone="Upper Box" data-sid="314"
+           fill="#7BA7D4" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="150.5,574.0 146.8,563.7 143.5,553.8 139.1,536.5 136.6,523.4 135.7,515.6 107.8,517.0 109.8,534.5 113.0,552.3 117.2,569.8 122.9,587.1 150.5,574.0 150.5,574.0"/>
+  <polygon class="section-zone" data-zone="Upper Box" data-sid="315"
+           fill="#7BA7D4" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="136.9,619.2 163.6,601.3 156.9,588.5 151.4,576.0 123.6,589.0 129.8,604.4 136.9,619.2 136.9,619.2"/>
+  <polygon class="section-zone" data-zone="Upper Box" data-sid="316"
+           fill="#7BA7D4" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="174.2,671.6 197.5,646.5 187.9,635.8 179.1,625.1 171.4,614.3 164.8,603.2 137.8,621.0 145.5,634.5 154.2,647.4 163.7,659.7 174.2,671.6 174.2,671.6"/>
+  <polygon class="section-zone" data-zone="Upper Box" data-sid="317"
+           fill="#7BA7D4" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="223.4,710.3 241.0,679.8 229.1,672.4 218.3,664.5 208.4,656.4 199.3,648.0 175.6,673.2 186.6,683.5 197.8,693.4 210.5,702.2 223.4,710.3 223.4,710.3"/>
+  <polygon class="section-zone" data-zone="Upper Box" data-sid="318"
+           fill="#7BA7D4" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="276.4,731.8 286.2,699.7 274.3,695.5 263.2,691.1 252.9,686.3 242.7,680.7 225.4,711.4 237.3,717.6 249.6,723.0 262.7,727.6 276.4,731.8 276.4,731.8"/>
+  <polygon class="section-zone" data-zone="Upper Box" data-sid="319"
+           fill="#7BA7D4" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="325.8,739.0 325.8,709.4 306.4,705.4 288.3,700.5 278.5,732.4 297.0,736.2 316.7,739.0 325.8,739.0 325.8,739.0"/>
+  <polygon class="section-zone" data-zone="Upper Box" data-sid="320"
+           fill="#7BA7D4" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="365.6,739.0 365.6,708.9 328.0,709.9 328.0,739.0 365.6,739.0"/>
+  <polygon class="section-zone" data-zone="Upper Box" data-sid="321"
+           fill="#7BA7D4" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="404.3,739.0 404.3,707.9 367.7,708.9 367.7,739.0 404.3,739.0"/>
+  <polygon class="section-zone" data-zone="Upper Box" data-sid="322"
+           fill="#7BA7D4" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="432.0,739.0 432.0,707.4 406.1,707.9 406.1,739.0 432.0,739.0"/>
+  <polygon class="section-zone" data-zone="Upper Box" data-sid="323"
+           fill="#7BA7D4" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="486.6,739.0 486.6,705.9 434.0,707.1 434.0,739.0 486.6,739.0"/>
+  <polygon class="section-zone" data-zone="Upper Box" data-sid="324"
+           fill="#7BA7D4" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="577.1,709.6 566.5,680.6 499.1,705.7 488.8,705.9 488.8,739.0 499.0,739.0 499.0,739.0 577.1,709.6"/>
+  <polygon class="section-zone" data-zone="Upper Box" data-sid="326"
+           fill="#7BA7D4" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="625.4,691.4 614.8,662.5 568.5,679.8 579.0,708.9 625.4,691.4"/>
+  <polygon class="section-zone" data-zone="Upper Box" data-sid="327"
+           fill="#7BA7D4" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="662.9,677.3 652.2,648.5 616.8,661.8 627.4,690.6 662.9,677.3"/>
+  <polygon class="section-zone" data-zone="Upper Box" data-sid="328"
+           fill="#7BA7D4" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="707.0,660.8 694.9,632.6 654.5,647.7 664.9,676.6 707.0,660.8"/>
+  <polygon class="section-zone" data-zone="Upper Box" data-sid="329"
+           fill="#7BA7D4" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="746.3,646.0 734.4,618.0 696.9,632.0 709.0,660.1 746.3,646.0"/>
+  <polygon class="section-zone" data-zone="Upper Box" data-sid="330"
+           fill="#7BA7D4" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="787.9,630.1 776.1,602.4 736.4,617.2 748.0,644.8 748.1,644.5 748.5,644.9 787.9,630.1"/>
+  <polygon class="section-zone" data-zone="Upper Box" data-sid="331"
+           fill="#7BA7D4" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="813.4,626.0 800.3,593.4 778.1,601.6 789.9,629.5 790.5,629.2 792.4,633.4 813.4,626.0"/>
+  <polygon class="section-zone" data-zone="Upper Reserved" data-sid="403"
+           fill="#A8C6E8" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="115.0,56.1 93.6,56.1 91.6,80.3 113.0,80.3 115.0,56.1"/>
+  <polygon class="section-zone" data-zone="Upper Reserved" data-sid="404"
+           fill="#A8C6E8" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="91.3,82.6 88.6,115.9 112.5,116.8 115.0,82.6 91.3,82.6"/>
+  <polygon class="section-zone" data-zone="Upper Reserved" data-sid="405"
+           fill="#A8C6E8" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="112.5,118.8 88.3,117.9 85.6,150.1 110.2,151.2 112.5,118.8"/>
+  <polygon class="section-zone" data-zone="Upper Reserved" data-sid="406"
+           fill="#A8C6E8" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="110.1,153.4 85.4,152.1 82.5,186.7 107.8,187.7 110.1,153.4"/>
+  <polygon class="section-zone" data-zone="Upper Reserved" data-sid="407"
+           fill="#A8C6E8" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="107.6,189.9 82.2,188.7 79.2,225.2 105.1,226.1 107.6,189.9"/>
+  <polygon class="section-zone" data-zone="Upper Reserved" data-sid="408"
+           fill="#A8C6E8" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="104.8,228.5 78.9,227.4 75.5,268.4 102.2,268.4 104.8,228.5"/>
+  <polygon class="section-zone" data-zone="Upper Reserved" data-sid="409"
+           fill="#A8C6E8" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="102.2,270.4 75.2,270.4 71.5,312.3 99.1,312.3 102.2,270.4"/>
+  <polygon class="section-zone" data-zone="Upper Reserved" data-sid="410"
+           fill="#A8C6E8" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="99.1,314.5 71.5,314.5 70.1,331.0 70.3,362.9 99.4,362.9 99.0,315.0 99.0,315.0 99.1,314.5"/>
+  <polygon class="section-zone" data-zone="Upper Reserved" data-sid="411"
+           fill="#A8C6E8" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="99.4,364.8 70.3,364.8 70.9,404.5 99.9,404.5 99.4,364.8"/>
+  <polygon class="section-zone" data-zone="Upper Reserved" data-sid="412"
+           fill="#A8C6E8" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="99.9,406.7 70.9,406.7 71.4,448.6 100.4,448.6 99.9,406.7"/>
+  <polygon class="section-zone" data-zone="Upper Reserved" data-sid="413"
+           fill="#A8C6E8" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="100.4,450.7 71.4,450.7 72.1,505.4 101.0,505.4 100.4,450.7"/>
+  <polygon class="section-zone" data-zone="Upper Reserved" data-sid="414"
+           fill="#A8C6E8" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="101.1,507.7 72.1,507.7 72.1,521.0 73.5,531.8 75.8,544.4 79.4,560.4 105.6,553.5 102.7,534.8 101.6,525.4 101.1,515.7 101.1,515.7 101.1,507.7 101.1,507.7"/>
+  <polygon class="section-zone" data-zone="Upper Reserved" data-sid="415"
+           fill="#A8C6E8" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="106.1,555.8 80.0,562.6 85.4,581.0 92.8,601.2 116.2,590.2 110.5,573.2 106.1,555.8 106.1,555.8"/>
+  <polygon class="section-zone" data-zone="Upper Reserved" data-sid="419"
+           fill="#A8C6E8" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="292.8,756.3 289.2,768.0 299.1,769.8 302.7,757.5 292.8,756.3 292.8,756.3"/>
+  <polygon class="section-zone" data-zone="Upper Reserved" data-sid="420"
+           fill="#A8C6E8" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="309.0,744.9 301.1,770.0 360.0,770.0 360.0,745.3 314.4,745.3 314.4,745.2 309.0,744.9 309.0,744.9"/>
+  <polygon class="section-zone" data-zone="Upper Reserved" data-sid="421"
+           fill="#A8C6E8" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="362.3,745.3 362.3,770.0 404.3,770.0 404.3,745.3 362.3,745.3"/>
+  <polygon class="section-zone" data-zone="Upper Reserved" data-sid="422"
+           fill="#A8C6E8" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="406.1,770.0 444.8,770.0 444.8,745.6 406.1,745.3 406.1,770.0"/>
+  <polygon class="section-zone" data-zone="Upper Reserved" data-sid="423"
+           fill="#A8C6E8" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="447.1,745.6 447.1,770.0 490.0,770.0 490.0,745.6 447.1,745.6"/>
+  <polygon class="section-zone" data-zone="Upper Reserved" data-sid="424"
+           fill="#A8C6E8" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="492.0,745.6 492.0,770.0 506.5,770.0 546.9,755.0 538.4,730.8 499.1,745.6 492.0,745.6"/>
+  <polygon class="section-zone" data-zone="Upper Reserved" data-sid="425"
+           fill="#A8C6E8" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="540.3,730.1 548.9,754.3 600.3,735.5 591.3,710.8 540.3,730.1"/>
+  <polygon class="section-zone" data-zone="Upper Reserved" data-sid="426"
+           fill="#A8C6E8" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="593.3,710.2 602.3,734.8 643.1,719.7 634.3,694.8 593.3,710.2"/>
+  <polygon class="section-zone" data-zone="Upper Reserved" data-sid="427"
+           fill="#A8C6E8" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="636.2,694.1 645.1,719.0 681.1,705.7 670.6,681.3 636.2,694.1"/>
+  <polygon class="section-zone" data-zone="Upper Reserved" data-sid="428"
+           fill="#A8C6E8" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="672.4,680.6 683.1,704.9 720.4,691.1 710.1,666.5 672.4,680.6"/>
+  <polygon class="section-zone" data-zone="Upper Reserved" data-sid="429"
+           fill="#A8C6E8" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="711.9,665.8 722.5,690.4 759.6,676.9 748.9,651.7 711.9,665.8"/>
+  <polygon class="section-zone" data-zone="Upper Reserved" data-sid="430"
+           fill="#A8C6E8" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="761.6,676.1 801.2,661.6 790.4,636.2 750.9,651.0 761.6,676.1"/>
+  <polygon class="section-zone" data-zone="Upper Reserved" data-sid="431"
+           fill="#A8C6E8" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="803.2,660.8 823.9,653.1 814.6,628.9 792.9,636.3 803.2,660.8"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="202"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="296.5,68.4 312.5,47.0 259.0,46.7 296.5,68.4"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="203"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="277.2,94.1 294.5,70.9 225.4,30.0 212.6,30.0 199.0,47.4 277.2,94.1"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="204"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="253.3,125.9 275.2,96.6 197.0,49.9 174.7,78.9 253.3,125.9"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="205"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="229.9,162.3 229.9,160.5 231.6,152.1 251.3,128.7 172.7,81.5 168.7,86.4 181.3,107.3 178.8,111.0 176.4,116.4 170.7,130.8 229.9,162.3 229.9,162.3"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="206"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="227.4,191.6 229.6,165.7 169.7,133.9 161.6,158.6 160.3,178.8 227.4,191.6 227.4,191.6"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="207"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="223.7,238.0 227.1,194.8 160.0,182.0 156.9,225.2 223.7,238.0"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="208"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="220.3,284.0 223.4,241.3 156.6,228.5 152.6,284.0 220.3,284.0"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="209"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="220.3,324.1 219.5,292.8 219.5,292.8 220.0,287.0 152.5,287.0 149.7,324.1 220.3,324.1"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="210"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="221.7,372.8 220.5,327.3 149.5,327.3 148.8,338.9 149.2,372.8 221.7,372.8"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="212"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="223.3,421.5 221.7,375.9 149.2,375.9 149.7,421.5 223.3,421.5"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="213"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="224.5,467.9 223.3,424.7 149.7,424.7 150.2,467.9 224.5,467.9"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="214"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="225.7,505.4 224.6,471.2 150.5,471.2 150.8,508.2 151.4,516.3 225.7,505.4 225.7,505.4"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="215"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="232.7,547.2 228.6,533.0 227.4,527.1 226.6,521.3 225.9,511.6 225.7,511.6 225.7,508.6 151.7,519.4 152.9,528.7 155.1,538.2 158.2,549.0 161.9,559.7 166.0,569.8 170.5,579.7 232.7,547.2 232.7,547.2"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="216"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="251.3,583.9 245.9,576.2 241.3,568.0 237.0,559.2 233.6,550.1 171.9,582.6 178.4,594.7 185.8,606.1 193.6,616.9 202.0,627.1 251.3,583.9 251.3,583.9"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="217"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="286.8,613.2 276.9,607.5 268.1,601.2 260.3,594.2 253.3,586.3 204.3,629.5 215.5,641.1 227.9,651.7 241.0,661.3 254.7,669.9 286.8,613.2 286.8,613.2"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="218"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="332.9,627.1 320.6,624.7 309.4,621.8 299.1,618.4 289.9,614.4 257.5,671.5 272.3,678.9 287.9,685.0 303.6,689.8 319.9,693.5 332.9,627.1 332.9,627.1"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="220"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="376.1,627.2 340.9,628.3 340.9,628.0 336.0,627.5 323.0,694.1 332.0,695.4 376.1,694.3 376.1,627.2 376.1,627.2"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="221"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="419.2,626.0 379.3,627.1 379.3,694.3 419.2,693.1 419.2,626.0"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="222"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="465.3,624.6 422.2,625.8 422.2,693.1 467.3,692.1 465.3,624.6"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="223"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="501.4,616.7 482.3,624.1 468.6,624.6 470.3,691.8 497.0,691.4 527.0,680.1 501.4,616.7"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="225"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="543.5,600.1 504.0,615.5 530.0,678.9 569.7,664.1 543.5,600.1"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="226"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="582.2,585.1 546.5,598.8 572.7,663.0 608.6,649.4 582.2,585.1"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="227"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="623.4,569.1 585.2,583.9 611.5,648.5 650.1,634.2 623.4,569.1"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="228"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="660.1,554.6 626.3,567.8 653.0,632.9 687.1,620.1 660.1,554.6"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="229"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="689.1,537.8 684.2,543.9 678.9,547.3 663.2,553.5 690.0,619.2 742.6,599.5 689.1,537.8"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="230"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="712.2,509.1 690.9,535.3 745.7,598.2 759.9,593.0 781.8,560.9 712.2,509.1"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="231"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="744.8,468.4 714.2,506.5 783.8,558.4 811.1,518.8 744.8,468.4"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="232"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="829.9,491.4 827.4,471.5 774.4,431.7 746.8,465.9 812.8,516.0 829.9,491.4"/>
+  <polygon class="section-zone" data-zone="Terrace Box" data-sid="233"
+           fill="#4A7FC1" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="806.0,451.1 806.0,422.6 799.0,415.7 786.8,416.0 776.4,429.2 806.0,451.1"/>
+  <polygon class="section-zone" data-zone="Budweiser Bleachers" data-sid="516"
+           fill="#CC3433" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="794.2,319.0 774.5,318.7 774.5,345.6 794.2,345.6"/>
+  <polygon class="section-zone" data-zone="Budweiser Bleachers" data-sid="517"
+           fill="#CC3433" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="794.2,377.9 794.6,347.5 774.5,347.8 774.5,377.9 794.2,377.9"/>
+  <polygon class="section-zone" data-zone="Budweiser Bleachers" data-sid="518"
+           fill="#CC3433" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="794.2,379.9 774.5,379.9 774.5,409.8 794.6,409.8"/>
+  <polygon class="section-zone" data-zone="Standing Room Only" data-sid="SRO"
+           fill="#6B6B6B" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="785.0,570.8 796.9,570.8 796.9,586.5 783.0,586.5"/>
+  <polygon class="section-zone" data-zone="Budweiser Bleachers" data-sid="Bleahers"
+           fill="#CC3433" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="790.9,316.7 790.9,316.0 800.4,316.0 798.3,261.0 759.9,262.7 759.6,260.5 798.3,258.7 796.3,209.6 752.2,216.7 751.8,214.6 796.1,207.5 796.1,206.7 797.0,194.8 791.3,189.4 791.3,166.5 791.3,166.2 791.8,166.2 790.9,159.2 790.9,85.7 779.3,97.1 777.7,95.4 790.9,82.0 761.3,47.4 745.5,63.3 744.0,61.8 760.0,45.7 759.6,45.4 655.0,45.4 655.0,46.0 653.9,46.0 630.3,46.0 621.2,40.0 618.5,40.0 618.6,89.8 617.2,89.8 616.5,40.0 574.7,40.0 575.0,89.4 572.5,89.2 572.4,40.0 522.1,40.0 522.4,88.7 520.2,88.6 519.9,40.0 480.9,40.0 467.3,49.7 467.3,69.6 465.2,69.6 465.2,51.0 422.5,51.0 422.5,69.6 420.3,69.6 420.3,51.0 374.1,51.0 374.1,69.6 371.9,69.6 371.9,51.0 342.1,51.0 344.0,69.6 368.7,69.5 368.7,69.6 371.9,69.6 374.1,69.6 420.3,69.6 422.5,69.6 465.2,69.6 467.3,69.6 467.7,81.0 477.4,89.1 520.1,88.9 522.4,89.1 572.5,89.5 575.0,89.7 617.2,90.1 618.6,90.1 630.3,90.1 636.5,50.4 630.3,46.0 630.3,46.0 653.9,46.0 655.0,46.2 674.3,51.1 693.4,57.6 703.1,61.3 711.9,65.3 720.4,69.6 727.9,74.6 728.3,74.4 729.6,75.8 742.6,63.3 744.0,64.7 731.5,77.3 739.0,85.0 747.5,93.7 755.4,103.1 761.7,111.7 776.4,96.8 777.7,98.6 762.9,113.6 764.5,116.7 764.2,116.8 791.3,166.5 791.3,189.4 791.3,189.6 786.4,185.3 780.2,166.5 778.1,162.5 745.7,175.9 744.8,173.9 777.0,160.5 756.8,121.6 725.9,140.3 724.7,138.6 755.9,119.6 756.3,119.3 751.2,111.4 744.4,102.8 715.5,126.5 719.8,131.9 724.1,137.8 723.8,137.8 726.2,141.5 726.2,141.5 743.8,173.6 743.8,173.6 744.8,175.6 744.8,175.6 750.6,212.6 750.5,212.6 751.7,221.2 751.8,221.2 758.3,260.7 758.6,262.7 766.0,309.6 774.0,316.7 790.9,316.7 790.9,316.7"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="101"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="340.6,86.0 336.6,50.7 324.9,48.7 309.4,69.2 340.6,86.0"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="102"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="343.1,108.0 340.9,88.7 308.1,70.9 285.5,100.6 331.5,125.4 343.1,108.0"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="103"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="283.7,103.1 263.7,129.6 311.5,155.8 329.8,128.2 283.7,103.1"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="104"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="262.1,131.5 244.7,154.6 294.2,182.0 310.2,157.5 262.1,131.5"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="105"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="293.3,184.5 243.5,156.3 239.0,162.5 236.4,194.4 291.7,194.4 293.3,184.5"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="106"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="236.4,196.4 233.3,232.8 289.2,232.8 291.7,196.4 236.4,196.4"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="107"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="233.1,235.1 230.7,266.1 287.1,266.1 289.1,235.1 233.1,235.1"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="108"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="230.3,268.4 228.2,295.5 228.3,298.5 284.9,298.5 286.8,268.4 230.3,268.4"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="109"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="228.3,300.5 229.1,329.6 282.6,329.6 284.6,300.5 228.3,300.5"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="110"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="229.4,331.5 230.2,362.9 283.4,362.9 282.5,333.0 282.5,331.5 229.4,331.5"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="111"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="230.3,364.8 231.1,398.1 284.3,398.1 283.4,364.8 230.3,364.8"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="112"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="231.4,400.4 232.3,437.9 285.5,437.9 284.3,400.4 231.4,400.4"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="113"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="232.3,440.0 233.1,460.5 286.3,460.5 285.5,440.0 232.3,440.0"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="114"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="233.1,462.5 233.9,487.2 287.1,487.2 286.3,462.5 233.1,462.5"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="115"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="233.9,489.4 234.5,514.0 234.5,514.0 235.1,521.7 288.0,508.2 287.9,507.1 287.9,504.9 287.4,489.4 233.9,489.4 233.9,489.4"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="116"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="235.3,523.9 236.0,529.6 237.0,535.0 240.1,544.9 243.9,554.6 294.8,528.4 290.5,519.3 289.1,514.8 288.3,510.3 235.3,523.9 235.3,523.9"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="117"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="244.7,556.3 249.9,565.8 255.9,574.8 262.7,582.8 270.3,590.2 309.0,546.9 301.9,539.0 295.7,530.4 244.7,556.3 244.7,556.3"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="118"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="272.0,591.4 280.0,597.5 288.3,602.8 297.3,607.5 306.5,611.2 327.8,560.0 318.9,554.7 310.7,548.4 272.0,591.4 272.0,591.4"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="119"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="308.8,611.9 322.4,616.0 336.9,618.1 345.1,618.1 352.2,565.1 350.2,565.1 345.1,564.9 339.8,564.1 334.7,562.9 329.8,560.9 308.8,611.9 308.8,611.9"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="120"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="347.2,618.0 384.7,617.2 384.7,565.1 354.5,565.1 347.2,618.0"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="121"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="387.0,617.2 418.0,616.4 418.0,565.1 387.0,565.1 387.0,617.2"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="122"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="420.3,616.4 450.4,615.6 450.4,565.1 420.3,565.1 420.3,616.4"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="123"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="452.2,615.6 479.2,614.9 489.2,611.0 474.0,564.3 472.3,565.1 452.2,565.1 452.2,615.6"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="124"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="491.2,610.3 517.2,600.1 499.4,553.8 476.0,563.4 491.2,610.3"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="125"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="519.2,599.5 546.3,589.0 527.9,541.9 501.4,553.0 519.2,599.5"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="126"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="548.1,588.0 576.8,576.9 558.3,529.1 530.0,541.0 548.1,588.0"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="127"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="578.8,576.2 602.4,567.1 583.8,518.8 560.3,528.4 578.8,576.2"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="128"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="604.4,566.3 633.3,555.0 614.6,505.9 585.8,517.7 604.4,566.3"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="129"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="635.6,554.3 661.2,544.1 642.2,494.3 616.5,504.9 635.6,554.3"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="130"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="663.2,543.5 676.1,538.2 697.4,512.6 656.7,481.0 649.6,490.9 647.1,488.9 648.4,491.8 644.2,493.5 663.2,543.5"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="131"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="698.6,510.8 719.2,486.0 676.7,453.4 657.9,479.3 698.6,510.8"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="132"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="720.4,484.4 739.0,461.6 695.4,427.7 678.0,451.7 720.4,484.4"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="133"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="740.6,459.8 762.5,432.9 744.3,418.9 697.9,424.3 696.6,426.0 740.6,459.8"/>
+  <polygon class="section-zone" data-zone="Field Box" data-sid="134"
+           fill="#1B5FBF" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="764.0,431.2 777.6,414.7 747.2,418.4 764.0,431.2"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="3"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="350.2,171.1 344.3,117.9 321.3,153.7 350.2,171.1"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="4"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="349.7,187.4 350.9,177.1 350.8,174.2 319.6,155.4 306.8,174.6 349.7,187.4"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="5"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="347.7,211.3 348.3,197.8 348.5,197.6 349.2,190.7 304.8,177.3 298.5,187.1 297.0,208.9 347.7,211.3"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="6"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="346.3,238.3 347.5,214.6 296.6,212.1 295.0,238.3 346.3,238.3"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="7"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="345.2,263.0 346.3,240.5 295.0,240.5 293.6,263.0 345.2,263.0"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="8"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="344.0,287.7 344.0,284.9 344.0,284.9 345.1,265.2 293.3,265.2 291.7,287.7 344.0,287.7"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="9"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="328.6,289.8 291.7,289.8 290.3,312.3 328.6,312.3 328.6,289.8"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="10"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="328.6,314.5 290.0,314.5 288.8,332.1 289.2,344.6 328.6,344.6 328.6,314.5"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="11"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="328.6,346.6 289.2,346.6 290.0,373.4 328.6,373.4 328.6,346.6"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="12"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="328.6,375.7 290.3,375.7 291.1,404.5 328.6,404.5 328.6,375.7"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="13"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="344.0,437.9 344.0,406.7 291.1,406.7 292.0,437.9 344.0,437.9"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="14"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="344.0,459.3 344.0,440.0 292.0,440.0 292.8,459.3 344.0,459.3"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="15"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="344.0,477.3 344.0,461.6 292.8,461.6 293.6,483.7 344.0,477.3"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="16"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="344.0,494.1 343.8,491.1 344.0,488.6 344.0,479.3 293.6,486.0 294.0,506.6 344.0,494.1 344.0,494.1"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="18"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="351.2,503.4 345.2,495.8 294.2,508.9 296.2,515.6 299.0,522.2 302.4,528.7 306.8,534.8 311.9,540.4 317.6,545.3 323.8,549.8 330.4,553.4 351.2,503.4 351.2,503.4"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="19"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="368.7,506.6 352.6,505.4 332.4,554.0 337.4,555.8 342.1,557.1 347.1,557.7 352.0,557.7 355.4,557.5 368.7,557.5 368.7,506.6 368.7,506.6"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="20"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="392.4,506.6 371.0,506.6 371.0,557.5 392.4,557.5 392.4,506.6"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="21"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="418.0,506.6 394.4,506.6 394.4,557.5 418.0,557.5 418.0,506.6"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="22"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="450.4,506.6 420.3,506.6 420.3,557.5 450.4,557.5 450.4,506.6"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="23"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="451.8,557.5 470.1,557.5 484.8,553.0 474.3,520.0 469.0,522.2 451.8,522.2 451.8,557.5"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="24"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="486.3,551.0 506.4,542.9 495.9,511.4 476.0,519.4 486.3,551.0"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="25"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="508.2,542.2 525.5,535.0 525.3,534.8 527.3,534.1 527.5,534.2 532.7,532.1 522.4,500.8 497.9,510.6 508.2,542.2"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="26"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="534.7,531.3 554.6,523.1 543.2,492.1 524.2,499.7 534.7,531.3"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="27"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="556.6,522.5 580.1,512.8 563.3,466.7 539.5,475.8 542.3,483.2 553.7,478.1 556.8,486.7 545.2,491.4 556.6,522.5"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="28"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="582.1,511.9 602.7,503.4 586.2,457.9 565.3,465.9 582.1,511.9"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="29"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="604.7,502.8 623.9,494.8 607.4,449.7 588.2,457.1 604.7,502.8"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="30"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="625.9,494.1 644.8,486.1 656.4,470.4 622.5,444.0 609.4,449.0 625.9,494.1"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="31"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="657.6,468.7 668.7,453.4 645.1,435.1 624.6,443.1 657.6,468.7"/>
+  <polygon class="section-zone" data-zone="Club Box" data-sid="32"
+           fill="#0E3386" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="670.0,451.7 689.1,425.2 662.1,428.4 647.3,434.2 670.0,451.7"/>
+  <polygon class="section-zone" data-zone="Premium Club / 1914 Club" data-sid="exec_club"
+           fill="#B8860B" stroke="white" stroke-width="0.5" stroke-opacity="0.4"
+           points="146.5,180.5 142.3,235.4 154.9,236.3 158.6,181.7"/>
+
+  <!-- FIELD OVERLAY -->
+  <rect class="football-field" fill="#2d6e3e" stroke="none"
+        x="142.3" y="180.5" width="16.3" height="55.8" rx="2.0" ry="2.0"/>
+  <rect class="end-zone" fill="#1a5c30" stroke="none" clip-path="url(#field-clip)"
+        x="142.3" y="180.5" width="1.8" height="55.8"/>
+  <rect class="end-zone" fill="#1a5c30" stroke="none" clip-path="url(#field-clip)"
+        x="156.8" y="180.5" width="1.8" height="55.8"/>
+  <line stroke="white" stroke-width="1.5" stroke-opacity="0.5"
+        x1="150.5" y1="180.5" x2="150.5" y2="236.3"/>
+  <line stroke="white" stroke-width="0.75" stroke-opacity="0.3"
+        x1="146.4" y1="180.5" x2="146.4" y2="236.3"/>
+  <line stroke="white" stroke-width="0.75" stroke-opacity="0.3"
+        x1="148.4" y1="180.5" x2="148.4" y2="236.3"/>
+  <line stroke="white" stroke-width="0.75" stroke-opacity="0.3"
+        x1="152.5" y1="180.5" x2="152.5" y2="236.3"/>
+  <line stroke="white" stroke-width="0.75" stroke-opacity="0.3"
+        x1="154.6" y1="180.5" x2="154.6" y2="236.3"/>
+
+  <!-- GATE MARKERS -->
+  <g class="gate-markers"
+     font-family="'Lexend Deca',system-ui,sans-serif"
+     font-size="9" font-weight="700">
+    <circle class="gate-marker" data-gate="Marquee Gate"
+            cx="560.0" cy="630.0" r="13"
+            fill="#0E3386" stroke="white" stroke-width="2"/>
+    <text x="560.0" y="656.0" fill="#0E3386" text-anchor="middle">Marquee Gate</text>
+    <circle class="gate-marker" data-gate="Gallagher Way Gate"
+            cx="280.0" cy="530.0" r="13"
+            fill="#0E3386" stroke="white" stroke-width="2"/>
+    <text x="254.0" y="534.0" fill="#0E3386" text-anchor="end">Gallagher Way Gate</text>
+    <circle class="gate-marker" data-gate="CD Peacock Premier Entrance"
+            cx="245.0" cy="430.0" r="13"
+            fill="#B8860B" stroke="white" stroke-width="2"/>
+    <text x="219.0" y="434.0" fill="#B8860B" text-anchor="end">CD Peacock Premier Entrance</text>
+    <circle class="gate-marker" data-gate="Left Field Gate"
+            cx="270.0" cy="145.0" r="13"
+            fill="#0E3386" stroke="white" stroke-width="2"/>
+    <text x="270.0" y="119.0" fill="#0E3386" text-anchor="middle">Left Field Gate</text>
+    <circle class="gate-marker" data-gate="Budweiser Bleacher Gate"
+            cx="620.0" cy="95.0" r="13"
+            fill="#CC3433" stroke="white" stroke-width="2"/>
+    <text x="620.0" y="69.0" fill="#CC3433" text-anchor="middle">Budweiser Bleacher Gate</text>
+    <circle class="gate-marker" data-gate="Wintrust Right Field Gate"
+            cx="700.0" cy="620.0" r="13"
+            fill="#0E3386" stroke="white" stroke-width="2"/>
+    <text x="726.0" y="624.0" fill="#0E3386" text-anchor="start">Wintrust Right Field Gate</text>
+  </g>
+
+  <g transform="translate(858,35)"
+     font-family="'Lexend Deca',system-ui,sans-serif"
+     font-size="11" fill="#999" text-anchor="middle">
+    <text x="0" y="0">N</text>
+    <line x1="0" y1="5" x2="0" y2="26"
+          stroke="#999" stroke-width="1.5"
+          marker-end="url(#svg-arrow)"/>
+  </g>
+
+</svg>
